@@ -1,232 +1,78 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Arial', sans-serif; background: #fff; color: #000; }
 header {
-    background-color: #333;
+    background-color: #000;
     color: white;
-    padding: 10px 20px;
+    padding: 20px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
-header nav {
-    display: flex;
-    gap: 20px;
-    margin-top: 10px;
+.logo img { height: 50px; }
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 18px;
 }
-header nav a {
-color: white;
-text-decoration: none;
-font-size: 18px; /* Increased font size */
-margin: 0 10px; /* Add horizontal spacing */
-}
-
-
-.container {
+nav a:hover { text-decoration: underline; }
+.container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+.announcement {
+    text-align: center;
+    background: #000;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
     padding: 20px;
-}
-h2 {
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .item-section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 300px);
-    gap: 20px;
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
 }
 .item {
-    border: 1px solid #ccc;
-    padding: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eee;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
 }
+.item:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
 .item img {
     width: 100%;
     height: auto;
+    transition: transform 0.3s;
 }
-.item h3 {
-    margin: 10px 0;
-}
-.item p {
-    color: #555;
-}
-
+.item h3 { margin: 15px 0 10px; font-size: 20px; }
+.item p { font-weight: bold; margin-bottom: 15px; }
 .buy-button {
-background-color: #333;
-color: white;
-border: none;
-padding: 10px;
-cursor: pointer;
-text-align: center;
-display: block;
-margin: 10px auto 0;
-width: 80%;
-}
-.buy-button:hover {
-background-color: #555;
-}
-
-
-.announcement{
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-weight: bold;
-padding-left: 450px;
-height: 40px;
-font-size: 35px;
-padding-bottom: 20px;
-background-color: black;
-color: white;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.body1{
-    height: 100vh;
-}
-header {
-    background-color: #333;
+    background: #000;
     color: white;
-    padding: 10px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
 }
-header nav {
-    display: flex;
-    gap: 20px;
-    margin-top: 10px;
-}
-header nav a {
+.buy-button:hover { background: #333; }
+footer {
+    background: #000;
     color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-.container {
-    padding: 20px;
-}
-h1 {
+    padding: 40px 20px;
     text-align: center;
-    margin-bottom: 20px;
 }
-p {
-    line-height: 1.6;
-    color: #555;
-    text-align: justify;
-}
-.about-image {
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
-    height: auto;
-}
-.my-footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 2.5rem;
-    margin-top: 5px;
+.footer-container { display: flex; flex-wrap: wrap; justify-content: space-around; max-width: 1200px; margin: 0 auto 20px; }
+.footer-section { min-width: 200px; margin: 20px; }
+.footer-section h4 { border-bottom: 2px solid #555; padding-bottom: 10px; }
+.footer-section ul { list-style: none; }
+.footer-section a { color: white; text-decoration: none; }
+.footer-section a:hover { text-decoration: underline; }
 
-}
-
-.my-footer-about {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 1.5rem;
-    margin-top: 4rem;
-    
-
-}
-
-
-
-
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        header nav {
-            display: flex;
-            gap: 20px;
-            margin-top: 10px;
-        }
-        header nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        .container {
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        form {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-        }
-        form label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-        }
-        form input,
-        form textarea,
-        form button {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        form button {
-            background-color: #333;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        form button:hover {
-            background-color: #555;
-        }
-    
-
-
+/* About/Contact specific */
+.about-image { max-width: 80%; display: block; margin: 30px auto; }
+form { max-width: 600px; margin: 0 auto; background: #f9f9f9; padding: 30px; border-radius: 8px; }
+form label { display: block; margin: 10px 0 5px; font-weight: bold; }
+form input, form textarea { width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 4px; }
+form button { background: #000; color: white; padding: 15px; border: none; cursor: pointer; }
+form button:hover { background: #333; }
