@@ -8,6 +8,11 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+h1{
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
 .logo img { height: 50px; }
 nav a {
     color: white;
@@ -37,6 +42,8 @@ nav a:hover { text-decoration: underline; }
     padding: 15px;
     text-align: center;
     transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
 }
 .item:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
 .item img {
@@ -45,7 +52,7 @@ nav a:hover { text-decoration: underline; }
     transition: transform 0.3s;
 }
 .item h3 { margin: 15px 0 10px; font-size: 20px; }
-.item p { font-weight: bold; margin-bottom: 15px; }
+.item p { font-weight: bold; margin-bottom: 15px; flex-grow: 1; }
 .buy-button {
     background: #000;
     color: white;
@@ -54,6 +61,7 @@ nav a:hover { text-decoration: underline; }
     width: 100%;
     cursor: pointer;
     font-weight: bold;
+    margin-top: auto;
 }
 .buy-button:hover { background: #333; }
 footer {
